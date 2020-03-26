@@ -9,6 +9,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "gen:types": "ts-node scripts/generate-typings.ts",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -25,12 +26,15 @@
     "@nestjs/core": "^7.0.5",
     "@nestjs/graphql": "^7.0.15",
     "@nestjs/platform-express": "^7.0.5",
+    "@nestjs/typeorm": "^7.0.0",
     "apollo-server-express": "^2.11.0",
     "graphql": "^14.6.0",
     "graphql-tools": "^4.0.7",
+    "pg": "^7.18.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.5.4"
+    "rxjs": "^6.5.4",
+    "typeorm": "^0.2.24"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.2",
